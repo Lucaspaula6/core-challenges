@@ -1,9 +1,11 @@
-import { Request, Response } from 'express';
+import { Request, Response } from "express";
 
-import Machine from './machine';
+import Machine from "./machine";
 
 const productList = (request: Request, response: Response) => {
   const formatedData = Machine.productListMachine();
+  console.log({ formatedData });
+
   response.status(200).json(formatedData);
 };
 
