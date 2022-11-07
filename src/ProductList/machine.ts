@@ -27,8 +27,6 @@ const productListMachine = () => {
       created = verifyCancelBooking(item, order, created);
     });
   }
-  console.log("created");
-  console.log(created);
   return created;
 };
 
