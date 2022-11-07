@@ -4,7 +4,7 @@ import Machine from "./machine";
 
 const productList = (request: Request, response: Response) => {
   const formatedData = Machine.productListMachine();
-  console.log({ formatedData });
+  // console.log({ formatedData });
 
   response.status(200).json(formatedData);
 };

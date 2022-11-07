@@ -3048,7 +3048,7 @@ export const ORDERS_FINAL_RESPONSE = [
     items: [
       {
         productType: "TRAVEL_INSURANCE_BUY",
-        status: "CANCELED",
+        status: "CANCELLED",
         date: new Date("2022-09-27T15:09:51.465"),
         orderId: 13534558,
       },
@@ -3188,13 +3188,13 @@ export const ORDERS_FINAL_RESPONSE = [
     items: [
       {
         productType: "CLUB_SMILES",
-        status: "CANCELED",
+        status: "CANCELLED",
         date: new Date("2022-10-04T15:13:53.992"),
         orderId: 13536719,
       },
       {
         productType: "MILES_BACK_REGULARIZATION",
-        status: "CONCLUDED",
+        status: "CANCELLED",
         date: new Date("2022-10-04T15:13:53.992"),
         orderId: 13536719,
       },
@@ -3208,13 +3208,13 @@ export const ORDERS_FINAL_RESPONSE = [
     items: [
       {
         productType: "CLUB_SMILES",
-        status: "CANCELED",
+        status: "CANCELLED",
         date: new Date("2022-10-03T15:50:18.609"),
         orderId: 13536292,
       },
       {
         productType: "MILES_BACK_REGULARIZATION",
-        status: "CONCLUDED",
+        status: "CANCELLED", //mudei manualmente
         date: new Date("2022-10-03T15:50:18.609"),
         orderId: 13536292,
       },

@@ -7,15 +7,15 @@ export const insert = (
   let flag = true;
   if (created.length > 0) {
     created.forEach((orderReport, index) => {
-      if (orderReport.items[0].orderId === order.orderId) {
+      if (parseInt(orderReport.items[0].orderId) === parseInt(order.orderId)) {
         created[index].items.push({
           productType,
           status: getStatus(order, item),
           date: new Date(order.date),
-          orderId: order.orderId,
+          orderId: parseInt(order.orderId),
         });
-        created[index].value.money = order.totals.total.money;
-        created[index].value.miles = order.totals.total.miles;
+        created[index].value.miles = parseInt(order.totals.total.miles);
+        created[index].value.money = parseFloat(order.totals.total.money);
         flag = false;
       }
     });
@@ -27,12 +27,12 @@ export const insert = (
           productType,
           status: getStatus(order, item),
           date: new Date(order.date),
-          orderId: order.orderId,
+          orderId: parseInt(order.orderId),
         },
       ],
       value: {
-        miles: order.totals.total.miles,
-        money: order.totals.total.money,
+        miles: parseInt(order.totals.total.miles),
+        money: parseFloat(order.totals.total.money),
       },
     });
   }
